@@ -1,0 +1,57 @@
+.nav
+	position: absolute
+	left: 0
+	padding-left: 7%
+
+.menu
+	display: flex
+	font-size: 48px
+	color: #928c94
+	font-weight: normal
+	cursor: pointer
+
+	@media (max-width: 1440px)
+		font-size: 30px
+
+	&__item
+		width: 130px
+		height: 60px
+		text-align: center
+		padding: 20px
+		display: flex
+		justify-content: center
+		margin-bottom: 10px
+		@media (max-width: 1440px)
+			padding: 10px
+			width: 110px
+		@media (max-width: 1148px)
+			width: 80px
+			padding: 7px
+
+		&:hover
+			background: rgba(255, 255, 255, 0.15)
+			border-radius: 5px
+
+		&:first-child
+			color: #fff
+			flex-direction: column
+			&:hover
+				background: linear-gradient(135deg, rgba(255, 223, 64, 1) 0%, rgba(255, 131, 89, 1) 90%)
+				background: -webkit-gradient(linear, left top, 0 100%, from(rgba(255, 131, 89, 1) 90%), to(rgba(255, 223, 64, 1) 0%))
+				background: -webkit-linear-gradient(135deg, rgba(255, 131, 89, 1) 0%, rgba(255, 223, 64, 1) 90%)
+				background: -moz-linear-gradient(135deg, rgba(255, 223, 64, 1) 0%, rgba(255, 131, 89, 1) 90%)
+				background: -o-linear-gradient(135deg, rgba(255, 223, 64, 1) 0%, rgba(255, 131, 89, 1) 90%)
+				background: -ms-linear-gradient(135deg, rgba(255, 223, 64, 1) 0%, rgba(255, 131, 89, 1) 90%)
+				-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdf40',endColorstr='#ff8359')
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdf40',endColorstr='#ff8359', GradientType=0)
+				border-radius: 5px
+		&_wrapper
+			position: relative
+	&__small-text
+		font-size: 12px
+		display: flex
+		justify-content: center
+		@media (max-width: 1440px)
+			font-size: 10px
+		@media (max-width: 1148px)
+			font-size: 7px

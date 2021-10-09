@@ -1,0 +1,38 @@
+.profile_wrapper
+	position: absolute
+	right: 0
+	padding-right: 7%
+	display: flex
+	width: 250px
+	cursor: pointer
+	color: #fff
+	flex-direction: column
+	@media (max-width: 1440px)
+		width: 200px
+
+.profile
+	display: flex
+	gap: 30px
+	justify-content: flex-end
+
+	&__name
+		margin: auto 0
+		font-size: 25px
+		@media (max-width: 1440px)
+			font-size: 20px
+		@media (max-width: 1148px)
+			font-size: 15px
+
+	&__img-arrow
+		display: flex
+		gap: 30px
+
+	&__img .image
+		border-radius: 50%
+	&__arrow
+		margin: auto 0
+		font-size: 25px
+		@media (max-width: 1440px)
+			font-size: 20px
+		@media (max-width: 1148px)
+			font-size: 15px
